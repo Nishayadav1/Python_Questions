@@ -17,7 +17,7 @@
     
  # --------------------------------------------------------------   
     
- '''Grading System:
+'''Grading System:
 # Write a program that takes a student's score (out of 100) and outputs their grade based on the following conditions:
 # 90-100: Grade A
 # 80-89: Grade B
@@ -356,7 +356,7 @@
 # Explanation: Print 7*1, 7*2, …, 7*10.
 
 # -----------------------ans------------------------------------
-a = int(input())
+# a = int(input())
 # b = int(input())
 # m = 0
 # if a > b:
@@ -685,7 +685,17 @@ a = int(input())
 # Sample Output: 
 # 8
 
-
+# ---------------ans------------------------------------------
+# b=int(input())
+# d=0
+# m=1
+# while b>0:
+#     a=b%10
+#     d+=a*m
+#     m*=2
+#     b//=10
+# print(d)    
+# ---------------------------------------------------------
 
 
 # Decimal to Binary:
@@ -694,8 +704,25 @@ a = int(input())
 # 8
 # Sample Output: 
 # 1000
+# ---------------ans--------------------------------------------
 
+# num=int(input())
+# b=""
+# if num==0:
+#     print("0")
+# while num>0:
+#     a=num%2
+#     b=str(a)+b
+#     num//=2
+# print(b)         
 
+#--------or--------
+
+# num=int(input())
+# b=bin(num)[2:]
+# print(b)
+
+# -------------------------------------------------------------
 
 
 # Is Prime?:
@@ -709,6 +736,9 @@ a = int(input())
 # Sample Output 2: 
 # Yes
 
+# ----------------------ans-------------------------------------
+
+# ---------------------------------------------------------------
 
 
 
