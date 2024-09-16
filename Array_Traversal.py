@@ -164,23 +164,35 @@ Sample Output:
 4
 Explanation: Here 3 is the minimum number. But since 3 is present more than once, we print the index of the first occurrence.'''
 
-list=list(map(int,input().split()))
-length=len(list)
-i=0
-m=list[i]
-while length>i:
-    if m>list[i]:
-        m=list[i]
-    i+=1
-j=0   
-while length>j:
-    if list[j]==m:
-        print(j)
-        break 
-    j+=1    
+# list=list(map(int,input().split()))
+# length=len(list)
+# i=0
+# m=list[i]
+# while length>i:
+#     if m>list[i]:
+#         m=list[i]
+#     i+=1
+# j=0  
+# while length>j:
+#     if list[j]==m:
+#         print(j+1)
+#         break 
+#     j+=1    
 
 
+# by one loop
 
+# lst = list(map(int, input().split()))  
+# length = len(lst)
+# m = lst[0]  
+# index = 1 
+# i = 1       
+# while i < length:
+#     if lst[i] < m:
+#         m = lst[i] 
+#         index = i+1
+#     i += 1       
+# print(index)
 
 
 
@@ -192,12 +204,17 @@ Sample Output:
 12
 Explanation: 5+7 = 12 is the maximum sum of two consecutive integers in the given array.'''
 
+# lst= list(map(int,input().split()))
+# l=len(lst)
+# i=0
+# s=0
+# while l-1>i:
+#     if s<lst[i]+lst[i+1]:
+#         s=lst[i]+lst[i+1]
 
-
-
-
-
-
+#     i+=1
+# print(s)            
+        
 
 
 # Count Elements until Negative:
@@ -208,6 +225,23 @@ Sample Output:
 4
 Explanation: There are 4 elements before the first negative number appears.'''
 
+# lst= list(map(int,input().split()))
+# l=len(lst)
+# i=0
+# s=0
+# m=0
+# while l-1>i:
+#     if lst[i]>=0:
+#         s+=1
+#         if m<s:
+#             m=s
+#     else:  
+#         s=0  
+#     i+=1
+# print(m)       
+
+
+
 # Sum until Zero:
 '''You are given an integer array. Add all the numbers present in the array till you encounter a 0 and print the sum. If no 0 is present, add till the end.
 Sample Input: 
@@ -215,6 +249,22 @@ Sample Input:
 Sample Output: 
 24
 Explanation: 10+5+6+3 = 24'''
+
+# lst= list(map(int,input().split()))
+# l=len(lst)
+# i=0
+# s=0
+# m=0
+# while l-1>i:
+#     if lst[i]!=0:
+#         s+=lst[i]
+#         if m<s:
+#             m=s
+#     else:  
+#         s=0  
+#     i+=1
+# print(m)  
+
 
 
 # Linear Search:
@@ -230,6 +280,31 @@ Sample Input 2:
 Sample Output 2:
 No'''
 
+# lst= list(map(int,input().split()))
+# l=len(lst)
+# i=0
+# c=0
+# n=int(input())
+# while l>i:
+#     if lst[i]==n:
+#         c+=1
+#     i+=1
+# if c>0:
+#     print("YES")
+# else:
+#     print("NO")           
+
+
+# -------------or------------
+
+# lst= list(map(int,input().split()))
+# i=int(input())
+# if i in lst:
+#     print("yes")
+# else:
+#     print("no")  
+  
+     
 
 # Check Array for Negative Numbers:
 '''You are given an array of integers. Check if the array has any negative numbers. If the array has any negative number, print yes. Else, print no.
@@ -243,6 +318,29 @@ Sample Input 2:
 Sample Output 2:
 Yes
 Explanation 2: The given array has negative numbers, -1 and -3.'''
+
+# lst= list(map(int,input().split()))
+# l=len(lst)
+# i=0
+# c=0
+# while l>i:
+#     if lst[i]<0:
+#         c+=1
+#     i+=1
+# if c>0:
+#     print("YES")
+# else:
+#     print("NO")   
+
+# ------or----------
+
+# lst = list(map(int, input().split()))
+
+# if any(x < 0 for x in lst):
+#     print("YES")
+# else:
+#     print("NO")
+ 
 
 
 # Check Array for Ascending Order:
@@ -258,6 +356,24 @@ Sample Output 2:
 Yes
 Explanation 2: The given array is in ascending order.'''
 
+# lst= list(map(int,input().split()))
+# l=len(lst)
+# i=0
+# c=0
+# m=0
+# while l>i:
+#     if c<lst[i]:
+#         c=lst[i]
+#     else:
+#         m+=1
+#     i+=1    
+# if m>0:
+#     print("NO")
+# else:
+#     print("Yes")            
+            
+    
+
 
 # First Perfect Square:
 '''You are given an array of integers. Print the first element of the array that is a perfect square. If there are no perfect squares, print No.
@@ -272,7 +388,31 @@ Sample Output 2:
 No
 Explanation 2: In the given array, there are no perfect squares.'''
 
+# lst = list(map(int, input().split()))
+# i = 0
+# found = False
+# while i < len(lst):
+#     num = lst[i]
+#     if num >= 0: 
+#         j = 0
+#         while j * j <= num:
+#             if j * j == num:
+#                 print(num)  
+#                 found = True
+#                 break
+#             j += 1
+#         if found:
+#             break
+#     i += 1
+# if not found:
+#     print("NO")
 
+    
+            
+    
+    
+    
+    
 # First Element Greater Than K:
 '''You are given an array of integers and another integer K. Print the first element of the array that is greater than K. If there are no elements greater than K, print No.
 Sample Input 1:
@@ -287,3 +427,20 @@ Sample Input 2:
 Sample Output 2:
 No
 Explanation 2: In the given array, there are no elements greater than 19.'''
+
+
+# lst= list(map(int,input().split()))
+# l=len(lst)
+# i=0
+# c=0
+# k=int(input())
+# while l>i:
+#     if lst[i]>k:
+#         print(lst[i])
+#         c+=1
+#         break
+#     i+=1
+# if c==0:
+#     print("NO")  
+      
+
