@@ -408,11 +408,7 @@ Explanation 2: In the given array, there are no perfect squares.'''
 #     print("NO")
 
     
-            
-    
-    
-    
-    
+               
 # First Element Greater Than K:
 '''You are given an array of integers and another integer K. Print the first element of the array that is greater than K. If there are no elements greater than K, print No.
 Sample Input 1:
