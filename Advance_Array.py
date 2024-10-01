@@ -13,11 +13,22 @@ Explanation: The given array has many subarrays with increasing numbers.
 3 6 8 -> 5 4 4 7 6 3 2 4 6 8 6 3 6 8 5
 Out of all these, the subarray with 4 increasing numbers is the longest.'''
 
-lst=int(input())
+
+lst=list(map(int,input().split()))
 l=len(lst)
+m=lst[0]
 i=0
+c=1
 while l>i:
-    
+    if m<lst[i]:
+        c+=1
+    else:
+        print(c)
+        m=lst[i]
+        c=0   
+    i+=1
+   
+ # --------------------------------------------------------------------???????????
 
 '''Reverse an Array:
 You are given an array of integers. Create a new array with elements in reverse order. Print the new array.
@@ -25,6 +36,15 @@ Sample Input:
 11 1 13 21 3 7
 Sample Output:
 7 3 21 13 1 11'''
+
+
+# lst=list(map(int,input().split()))
+# l=len(lst)
+# i=1
+# while l>=i:
+#     print(lst[-(i)],end=" ")
+#     i+=1
+    
 
 
 '''Check Array for Palimdrome:
@@ -41,6 +61,24 @@ Yes
 Explanation 2: The reverse of the array reads same as the original array.'''
 
 
+
+# lst=list(map(int,input().split()))
+# l=len(lst)
+# i=1
+# c=0
+# if l%2==0:
+#     while l//2>=i:
+#         if lst[i]==lst[-(i)]:
+#             c+=1
+#         i+=1    
+# if c>0:
+#     print("no")
+# else:
+#     print("Yes")    
+            
+        
+
+
 '''Maximum Frequency in an Array:
 You are given an array of integers. Find the element that appears the maximum number of times in an array. If multiple elements appear maximum number of times, you can print any.
 Sample Input:
@@ -48,6 +86,14 @@ Sample Input:
 Sample Output:
 4
 Explanation: Both 4 and 11 appear 2 times. We can print any of 4 and 11, so we print 4.'''
+
+
+# lst=list(map(int,input().split()))
+# lst1=lst
+# l=len(lst)
+# i=1
+# while l>=i:
+#     if 
 
 
 '''Min and Max Difference in an Array:
