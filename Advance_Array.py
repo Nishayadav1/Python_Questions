@@ -14,19 +14,22 @@ Explanation: The given array has many subarrays with increasing numbers.
 Out of all these, the subarray with 4 increasing numbers is the longest.'''
 
 
-lst=list(map(int,input().split()))
-l=len(lst)
-m=lst[0]
-i=0
-c=1
-while l>i:
-    if m<lst[i]:
-        c+=1
-    else:
-        print(c)
-        m=lst[i]
-        c=0   
-    i+=1
+# l = list(map(int, input().split()))  
+# m = 1 
+# c = 1  
+# i = 1  
+# while i < len(l): 
+#     if l[i] > l[i - 1]:  
+#         c += 1 
+#     else:
+#         c = 1 
+    
+#     if c > m: 
+#         m = c
+    
+#     i += 1 
+
+# print(m)
    
  # --------------------------------------------------------------------???????????
 
@@ -39,11 +42,13 @@ Sample Output:
 
 
 # lst=list(map(int,input().split()))
-# l=len(lst)
+# l=len(lst)+1
 # i=1
-# while l>=i:
-#     print(lst[-(i)],end=" ")
-#     i+=1
+# l1=[]
+# while l>i:
+#     l1.append(lst[-i])
+#     i+=1    
+# print(l1)     
     
 
 
@@ -89,12 +94,25 @@ Explanation: Both 4 and 11 appear 2 times. We can print any of 4 and 11, so we p
 
 
 # lst=list(map(int,input().split()))
-# lst1=lst
 # l=len(lst)
 # i=1
+# m=0
+# k=0
 # while l>=i:
-#     if 
-
+#     c=0
+#     j=i+1
+#     while j<l:
+#         if lst[i]==lst[j]:
+#             c+=1
+#         j+=1    
+#         if m<c:
+#             m=c
+#             k=lst[i]
+#     i+=1
+# print(k)            
+            
+                
+    
 
 '''Min and Max Difference in an Array:
 You are given an array of integers. Find the minimum and maximum difference between any two elements in an array.
@@ -103,6 +121,14 @@ Sample Input:
 Sample Output:
 0 7
 Explanation: Minimum Difference: 4 - 4 = 0. Maximum Difference: 11 - 4 = 7'''
+
+lst=list(map(int,input().split()))
+
+
+
+
+
+
 
 
 '''Sum of Array Except Self
@@ -119,6 +145,14 @@ The fourth element of the array is 7. 21 = 7 + 3 + 6 + 5.
 The fifth element of the array is 5. 23 = 7 + 3 + 6 + 7.'''
 
 
+
+
+
+
+
+
+
+
 '''Frequency of Each Element in an Array:
 You are given an array of integers. Print the frequency of each element in the array.
 Sample Input: 
@@ -131,6 +165,11 @@ Sample Output:
 7 3
 4 2
 Explanation: 3 appears twice, but we have to print its frequency only once. Same is with other numbers. '''
+
+
+
+
+
 
 
 '''Sum of All Differences Between Pairs
@@ -149,6 +188,13 @@ Absolute difference between 6 and 4 = 2
 Sum of absolute differences between all pairs: 4+1+3+3+1+2 = 14'''
 
 
+
+
+
+
+
+
+
 '''Find All Pairs with a Given Sum:
 You are given an integer array and a target sum. Find all pairs of elements in the array that add up to the given sum.
 Sample Input: 
@@ -159,6 +205,12 @@ Sample Output:
 7 3
 2 8
 Explanation: The target sum here is 10. 10=4+6. 10=7+3. 10=2+8. Also, if you have printed the pair 4,6 once, you do not need to print it again as 6,4.'''
+
+
+
+
+
+
 
 
 '''First Repeat in an Array:
@@ -173,6 +225,14 @@ Sample Input 2:
 Sample Output 2:
 No
 Explanation 2: The given array doesn't contain any duplicate element, hence we print No.'''
+
+
+
+
+
+
+
+
 
 '''Subarray with a Given Sum:
 You are given an integer array and a target sum. Print a subarray that adds up to the target sum.
@@ -192,6 +252,12 @@ Not Possible
 Explanation 2: No subarray within the given array adds up to 14.'''
 
 
+
+
+
+
+
+
 '''Check for a Subarray in an Array
 You are given two arrays. Check if the second array is a subarray of the first array. Print yes if it is, else print no.
 A subarray is defined as a contiguous portion of an array.
@@ -205,6 +271,13 @@ Sample Input 2:
 7 6 4 9 6
 Sample Output 2: 
 No'''
+
+
+
+
+
+
+
 
 '''Common Elements in Two Arrays:
 You are given an integer n and two integer arrays each of length n. Print all the common elements between these two arrays.
@@ -225,6 +298,13 @@ No
 Explanation 2: No elements are common in the two given array.'''
 
 
+
+
+
+
+
+
+
 '''Find all Subarrays of an Array:
 You are given an integer array. Print all the subarrays.
 A subarray is defined as a contiguous portion of an array.
@@ -238,6 +318,14 @@ Sample Output:
 2
 2 1
 1'''
+
+
+
+
+
+
+
+
 
 
 '''Sum of Subarrays:
