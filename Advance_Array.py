@@ -122,11 +122,22 @@ Sample Output:
 0 7
 Explanation: Minimum Difference: 4 - 4 = 0. Maximum Difference: 11 - 4 = 7'''
 
-lst=list(map(int,input().split()))
-
-
-
-
+# lst=list(map(int,input().split()))
+# mi=float('inf')
+# ma=float('-inf')
+# i=0
+# while i<len(lst):
+#     j=i+1
+#     while j<len(lst):
+#         a=abs(lst[i]-lst[j])
+#         if a<mi:
+#             mi=a  
+#         if a>ma:
+#             ma=a    
+#         j+=1
+        
+#     i+=1
+# print(mi,ma)              
 
 
 
@@ -145,13 +156,22 @@ The fourth element of the array is 7. 21 = 7 + 3 + 6 + 5.
 The fifth element of the array is 5. 23 = 7 + 3 + 6 + 7.'''
 
 
-
-
-
-
-
-
-
+# lst=list(map(int,input().split()))
+# i=0 
+# while i<len(lst):
+#     s=0 
+#     k=i
+#     j=0 
+#     while j<len(lst):
+#         if k!=j:
+#             s+=lst[j]
+#         j+=1    
+#     print(s,end=" ") 
+#     s=0
+#     k=0
+#     i+=1
+    
+           
 
 '''Frequency of Each Element in an Array:
 You are given an array of integers. Print the frequency of each element in the array.
@@ -167,7 +187,21 @@ Sample Output:
 Explanation: 3 appears twice, but we have to print its frequency only once. Same is with other numbers. '''
 
 
+# l = list(map(int, input().split()))
+# i = 0 
+# l1 = [] 
 
+# while i < len(l):
+#     c = 0 
+#     j = 0 
+#     while j < len(l):
+#         if l[i] == l[j]:
+#             c += 1
+#         j += 1
+#     if l[i] not in l1: 
+#         print(l[i], c)
+#         l1.append(l[i]) 
+#     i += 1
 
 
 
@@ -187,8 +221,11 @@ Absolute difference between 3 and 4 = 1
 Absolute difference between 6 and 4 = 2
 Sum of absolute differences between all pairs: 4+1+3+3+1+2 = 14'''
 
-
-
+# l=list(map(int, input().split()))
+# i=0 
+# while i<len(l):
+#     j=i+1
+    
 
 
 
