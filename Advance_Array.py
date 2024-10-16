@@ -223,13 +223,16 @@ Sum of absolute differences between all pairs: 4+1+3+3+1+2 = 14'''
 
 # l=list(map(int, input().split()))
 # i=0 
+# s=0
 # while i<len(l):
 #     j=i+1
+#     while j<len(l):
+#         a=abs(l[i]-l[j])
+#         s+=a 
+#         j+=1 
+#     i+=1 
+# print(s)        
     
-
-
-
-
 
 
 '''Find All Pairs with a Given Sum:
@@ -243,10 +246,18 @@ Sample Output:
 2 8
 Explanation: The target sum here is 10. 10=4+6. 10=7+3. 10=2+8. Also, if you have printed the pair 4,6 once, you do not need to print it again as 6,4.'''
 
+# l=list(map(int, input().split()))
+# t=int(input())
+# i=0 
 
-
-
-
+# while i<len(l):
+#     j=i+1
+#     while j<len(l):
+#         if l[i]+l[j] ==t:
+#             print(l[i],l[j])
+#         j+=1 
+#     i+=1 
+    
 
 
 
@@ -264,11 +275,20 @@ No
 Explanation 2: The given array doesn't contain any duplicate element, hence we print No.'''
 
 
-
-
-
-
-
+# l=list(map(int, input().split()))
+# i=0 
+# c=0
+# while i<len(l):
+#     j=0
+#     while j<len(l):
+#         if l[i]==l[j]:
+#             c+=1
+#             if c==2:
+#                 print(l[j])
+#                 break
+#         j+=1 
+#     i+=1 
+    
 
 
 '''Subarray with a Given Sum:
@@ -289,11 +309,25 @@ Not Possible
 Explanation 2: No subarray within the given array adds up to 14.'''
 
 
-
-
-
-
-
+# l=list(map(int,input().split()))
+# t=int(input())
+# n=len(l)
+# i=0 
+# while i<n+1:
+#     j=i+1
+#     s=0
+#     while j<n:
+#         s+=l[j]
+#         if s==t:
+#             print(l[i+1:j+1])
+#             break
+#         j+=1 
+#     i+=1 
+# else:
+#     print("NO")    
+        
+       
+  
 
 '''Check for a Subarray in an Array
 You are given two arrays. Check if the second array is a subarray of the first array. Print yes if it is, else print no.
@@ -309,6 +343,25 @@ Sample Input 2:
 Sample Output 2: 
 No'''
 
+# l=list(map(int,input().split()))
+# l1=list(map(int,input().split()))
+# n=len(l) 
+# m=len(l1) 
+# i=0 
+# j=0 
+# while i<n and j<m:
+#     if l[i]==l[j]:
+#         i+=1 
+#         j+=1 
+#     else:
+#         i= i-j+1 
+#         j=0 
+# if j==m:
+#     print("YES")
+# else:
+#     print("NO")                
+
+# ????????????????????????????????????????
 
 
 
